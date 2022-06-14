@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma première page !!!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Accueil</h1>
+      <nav>
+        <ul>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+          <li><a href="https://www.diginamic.fr/">DIGINAMIC</a></li>
+          <li><a href="https://www.cdv.html/">Conditions générales</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="images">
+      <h1>Mes <span style="color: red">Vacances</span> en Martinique</h1>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1581837394248-5bed7276b021?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694"
+          alt=""
+        />
+        <figcaption>La plage</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1586094332115-680788e0182f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+          alt=""
+        />
+        <figcaption>La montagne Pelée</figcaption>
+      </figure>
+    </section>
+    <section id="tarifs">
+      <h1>Les tarifs</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Intitulé</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Martinique</td>
+            <td>200€</td>
+          </tr>
+          <td>Seychelles</td>
+          <td>400€</td>
+        </tbody>
+      </table>
+    </section>
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <form id="contact-form" method="post">
+        <select name="salut" id="salut">
+          <option value="Mme">Mme</option>
+          <option value="M.">M.</option>
+        </select>
+
+        <label for="Nom">Nom:</label>
+        <input type="text" minlength="2" required name="nom" id="nom" />
+
+        <label for="Mon pays">Mon pays:</label>
+        <input type="text" id="pays" value="France">
+
+        <label for="message">Mon message: </label>
+        <input type="text" name="message" id="message"/>
+        
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <section>Une troisième pour la route.</section>
+    <footer>Mon pied de page !</footer>
+  </body>
+</html>
